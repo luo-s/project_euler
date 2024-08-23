@@ -12,11 +12,12 @@
 # Find the difference between the sum of the squares of the first n natural numbers and the square of the sum.
 
 def sumSquareDifference(n):
-    # sum of squares = n(n+1)(2n+1)/6
-    sum_of_squares = sum([i**2 for i in range(1, n+1)])
-    # square of sum = (n(n+1)/2)^2
-    square_of_sum = sum(range(1, n+1))**2
+    sum_of_squares = sum([pow(i, 2) for i in range(1, n + 1)])
+    square_of_sum = pow(sum(range(1, n + 1)), 2)
     return square_of_sum - sum_of_squares
+
+# def sumSquareDifference(n):
+#     return pow((n * (n + 1) / 2), 2) - n * (n + 1) * (2 * n + 1) / 6
 
 def test(n, answer):
     if sumSquareDifference(n) == answer:

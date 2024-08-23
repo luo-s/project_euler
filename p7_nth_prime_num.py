@@ -14,7 +14,7 @@ def nth_prime(n):
     return p-1
 
 def is_prime(n):
-    for i in range(2, math.isqrt(n)+1):
+    for i in range(2, math.isqrt(n) + 1):
         if n % i == 0:
             return False
     return True

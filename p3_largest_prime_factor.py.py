@@ -1,4 +1,4 @@
-# Problem 3: Largest prime factor
+# Problem 3: Largest prime factor (prime factorizations)
 
 # The prime factors of 13195 are 5, 7, 13 and 29.
 

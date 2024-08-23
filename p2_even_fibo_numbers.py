@@ -10,12 +10,12 @@
 
 def fiboEvenSum(n):
     fibo = [1, 2]
-    l, sum= 2, 2
-    while fibo[l-1] + fibo[l-2] <= n:
-        fibo.append(fibo[l-1] + fibo[l-2])
-        if fibo[l] % 2 == 0:
-            sum += fibo[l]
-        l += 1
+    index, sum= 2, 2
+    while fibo[index-1] + fibo[index-2] <= n:
+        fibo.append(fibo[index-1] + fibo[index-2])
+        if fibo[index] % 2 == 0:
+            sum += fibo[index]
+        index += 1
     return sum
 
 def test(number, answer):
