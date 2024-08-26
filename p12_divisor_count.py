@@ -38,14 +38,3 @@ def divisor_cnt(n):
                 count += 2  # Count both divisors
     return count
 
-def test(n, answer):
-    if divisibleTriangleNumber(n) == answer:
-        print(f"test case {n} Passed")
-    else:
-        print(f"test case {n} Failed")
-
-test(5, 28)
-test(23, 630)
-test(167, 1385280)
-test(374, 17907120)
-test(500, 76576500)
