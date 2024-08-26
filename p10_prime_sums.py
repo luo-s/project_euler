@@ -3,6 +3,12 @@
 
 # Find the sum of all the primes below n.
 
+# # Python prime library https://pypi.org/project/primePy/ 
+# # primePy took unusual time for large n, it probably doens't apply Sieve of Eratosthenes Algorithm 
+# from primePy import primes
+# def primeSum(n):
+#     return sum(primes.upto(n - 1))
+
 def primeSum(n):
     # Sieve of Eratosthenes
     primes = [True] * (n + 1)
@@ -17,13 +23,3 @@ def primeSum(n):
             ans += i
     return ans
         
-def test(n, answer):
-    if primeSum(n) == answer:
-        print(f"test case {n} Passed")
-    else:
-        print(f"test case {n} Failed")
-
-test(17, 41)
-test(2001, 277050)
-test(140759, 873608362)
-test(2000000, 142913828922)
