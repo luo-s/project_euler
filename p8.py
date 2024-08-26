@@ -23,6 +23,7 @@ def max_product(numbers, n):
         product *= numbers[i]
     max_p = product
     ptr = n + 1
+    # sliding window
     while ptr < len(numbers):
         product = product * numbers[ptr] / numbers[ptr - n]
         if product > max_p:
