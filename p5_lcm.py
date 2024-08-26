@@ -23,14 +23,3 @@ def smallestMult(n):
 # def smallestMult(n):
 #     range_n = range(1, n+1)
 #     return math.lcm(*range_n)
-
-def test(n, answer):
-    if smallestMult(n) == answer:
-        print(f"test case {n} Passed")
-    else:
-        print(f"test case {n} Failed")
-
-# Test cases
-test(10, 2520)
-test(13, 360360)
-test(20, 232792560)
