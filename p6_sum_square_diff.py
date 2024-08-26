@@ -19,13 +19,3 @@ def sumSquareDifference(n):
 # def sumSquareDifference(n):
 #     return pow((n * (n + 1) / 2), 2) - n * (n + 1) * (2 * n + 1) / 6
 
-def test(n, answer):
-    if sumSquareDifference(n) == answer:
-        print(f"test case {n} Passed")
-    else:
-        print(f"test case {n} Failed")
-
-# Test cases
-test(10, 2640)
-test(20, 41230)
-test(100, 25164150)
