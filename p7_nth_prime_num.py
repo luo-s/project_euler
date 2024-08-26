@@ -2,8 +2,13 @@
 # we can see that the 6th prime is 13.
 
 # What is the nth prime number?
-import math
 
+# # Python prime library https://pypi.org/project/primePy/ 
+# from primePy import primes
+# def nth_prime(n):
+#     return primes.first(n)[-1]
+
+import math
 def nth_prime(n):
     count = 0
     p = 2
@@ -19,7 +24,7 @@ def is_prime(n):
             return False
     return True
 
-# Sieve of Eratosthenes
+# # Sieve of Eratosthenes
 # def sieve_of_eratosthenes(limit):
 #     primes = [True] * (limit + 1)
 #     p = 2
@@ -30,16 +35,3 @@ def is_prime(n):
 #         p += 1
 #     return [p for p in range(2, limit + 1) if primes[p]]
 
-
-def test(n, answer):
-    if nth_prime(n) == answer:
-        print(f"test case {n} Passed")
-    else:
-        print(f"test case {n} Failed")
-
-# Test cases
-test(6, 13)
-test(10, 29)
-test(100, 541)
-test(1000, 7919)
-test(10001, 104743)
