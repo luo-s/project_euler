@@ -12,18 +12,3 @@ def largest_prime_factor(number):
         else:
             number //= i
     return number
-
-def test(number, answer):
-    if largest_prime_factor(number) == answer:
-        print(f"test case {number} Passed")
-    else:
-        print(f"test case {number} Failed")
-
-# Test cases
-test(2, 2)
-test(3, 3)
-test(5, 5)
-test(7, 7)
-test(32, 2)
-test(13195, 29)
-test(600851475143, 6857)
