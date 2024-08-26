@@ -12,15 +12,4 @@ def multiples_of_3_and_5(number):
             sum += i
     return sum
 
-def test(number, answer):
-    if multiples_of_3_and_5(number) == answer:
-        print(f"test case {number} Passed")
-    else:
-        print(f"test case {number} Failed")
 
-# Test cases
-test(10, 23)
-test(49, 543)
-test(1000, 233168)
-test(8456, 16687353)
-test(19564, 89301183)

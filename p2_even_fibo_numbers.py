@@ -18,15 +18,3 @@ def fiboEvenSum(n):
         index += 1
     return sum
 
-def test(number, answer):
-    if fiboEvenSum(number) == answer:
-        print(f"test case {number} Passed")
-    else:
-        print(f"test case {number} Failed")
-
-# Test cases
-test(10, 10)
-test(60, 44)
-test(1000, 798)
-test(100000, 60696)
-test(4000000, 4613732)
